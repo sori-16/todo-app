@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A modern, beautiful to-do list app to organize your tasks. Built with vanilla JavaScript, featuring dark mode, filters, and local storage.">
+    <title>TaskMaster - Modern To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="app-title">
+                    <span class="title-icon">✓</span>
+                    TaskMaster
+                </h1>
+                <p class="app-subtitle">Organize your life, one task at a time</p>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalTasks">0</span>
+                    <span class="stat-label">Total</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="activeTasks">0</span>
+                    <span class="stat-label">Active</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="completedTasks">0</span>
+                    <span class="stat-label">Done</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Task Input -->
+        <div class="task-input-container">
+            <form id="taskForm" class="task-form">
+                <input type="text" id="taskInput" class="task-input" placeholder="What needs to be done?"
+                    autocomplete="off" required>
+                <button type="submit" class="btn-add" id="addBtn">
+                    <span class="btn-text">Add Task</span>
+                    <span class="btn-icon">+</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+                All Tasks
+            </button>
+            <button class="filter-btn" data-filter="active">
+                Active
+            </button>
+            <button class="filter-btn" data-filter="completed">
+                Completed
+            </button>
+        </div>
+
+        <!-- Tasks List -->
+        <div class="tasks-container">
+            <ul class="tasks-list" id="tasksList">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">📝</div>
+                <h3 class="empty-title">No tasks yet!</h3>
+                <p class="empty-text">Add a task above to get started</p>
+            </div>
+        </div>
+
+        <!-- Clear Completed Button -->
+        <div class="actions">
+            <button class="btn-clear" id="clearCompleted">
+                Clear Completed
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Built with ❤️ by Soreti | <a href="https://github.com/yourusername/taskmaster" target="_blank">View on
+                GitHub</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
