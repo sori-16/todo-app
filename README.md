@@ -131,8 +131,7 @@ Free to use for personal and commercial projects. No attribution required.
 ## 👨‍💻 Author
 
 **Soreti** - Full-Stack Android Developer
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Portfolio: [your-portfolio-link](https://yourusername.github.io/portfolio)
+- GitHub: [@sori-16(https://github.com/yourusername)
 
 ## 🙏 Acknowledgments
 
