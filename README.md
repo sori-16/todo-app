@@ -32,7 +32,6 @@ A beautiful, feature-rich to-do list application built with vanilla JavaScript. 
 1. Create a new repository on GitHub
 2. Upload all files
 3. Enable GitHub Pages in repository settings
-4. Your app will be live at `https://yourusername.github.io/taskmaster`
 
 ## 📦 Project Structure
 
@@ -131,7 +130,7 @@ Free to use for personal and commercial projects. No attribution required.
 ## 👨‍💻 Author
 
 **Soreti** - Full-Stack Android Developer
-- GitHub: [@sori-16(https://github.com/yourusername)
+- GitHub: [sori-16](https://github.com/sori-16)
 
 ## 🙏 Acknowledgments
 
